@@ -7,7 +7,7 @@ var app = angular.module('reducequeue',['ui.router'])
       })
       .state('feed', {
         url: '/home',
-        templateUrl: 'scripts/views/xyz.html',
+        templateUrl: 'scripts/views/home.html',
         controller:"homepageController"
       })
 

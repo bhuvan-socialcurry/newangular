@@ -1,4 +1,11 @@
-angular.module('reducequeue').controller('homepageController',function($scope,$rootScope){
-    console.log("there are lost",$rootScope)
-    $scope.products=[{name:'Ice Cream',img_url:'',price:'Rs 50'},{name:'Ice Cream',img_url:'',price:'Rs 150'},{name:'Burger',img_url:'',price:'Rs 150'},{name:'Chowmein',img_url:'',price:'Rs 100'}];
+angular.module('reducequeue').controller('homepageController',function($scope,userservice){
+    $scope.books=[];
+    $scope.getfn= function(){
+        console.log("this is not a price")
+        userservice.getbooks().then(function(books){
+            console.log("this is a books",books)
+            $scope.books=books.data
+        })
+    }
+    $scope.getfn()
 })

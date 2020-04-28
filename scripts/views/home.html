@@ -1,0 +1,17 @@
+<div ng-controller="homepageController as hpc">
+    <div  ng-repeat="book in books">
+        
+        <div className="col-12 mt-5">
+            <Media tag="li">
+              <Media left middle>
+                  <Media object ngsrc={{book.imageurl}} alt={{book.title}}, />
+              </Media>
+              <Media body className="ml-5">
+                <Media heading>{{book.title}},</Media>
+                <p>{{book.authorname}}</p>
+              </Media>
+            </Media>
+          </div>
+        
+    </div>
+</div>
