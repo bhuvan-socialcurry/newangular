@@ -1,0 +1,13 @@
+{
+  "name": "newangular",
+  "authors": [
+    "bhuvan-socialcurry@outlook.com"
+  ],
+  "description": "ok",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "angular": "angularjs#^1.7.9"
+  }
+}

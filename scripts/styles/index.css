@@ -1,0 +1,8 @@
+.formspl{
+    font-size: 16px;
+    text-align:center;
+    height: 50%;
+    background-image: url(../images/io.jpeg);
+    background-size:auto;
+    background-repeat:round
+}
